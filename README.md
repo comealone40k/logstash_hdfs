@@ -10,6 +10,6 @@ Testing the logstash webhdfs plugin
 # Running
 * bash /usr/share/logstash/bin/logstash -f /tmp/logstash_webhdfs.properties --log.level debug
 
-In case you run into No Kerberos credentials available: Invalid UID in persistent keyring name
+In case you run into "No Kerberos credentials available: Invalid UID in persistent keyring name" error, 
 remove this line from the krb5.conf:
  default_ccache_name = KEYRING:persistent:%{uid}
